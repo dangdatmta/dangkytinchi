@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="page-content">
+    <div class="">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="card">
+                    <h3 class="header smaller lighter blue">LỚP HỌC PHẦN</h3>
+                    <div class="card-header">
+                        <a href="#" class="btn btn-success">Thêm</a>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>STT</th>
+                                    <th>Tên</th>
+                                    <th>Số lượng sinh viên tối đa</th>
+                                    <th>Số lượng sinh viên đã đăng ký</th>
+                                    <th>Edit</th>
+                                    <th>Delete</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @{
+                                    int i = 1;
+                                }
+                                <tr>
+                                    <td>@i</td>
+                                    <td>Thực tập CNTT</td>
+                                    <td>50</td>
+                                    <td>48</td>
+                                    <td><a href="#" class="badge badge-warning">Sửa</a></td>
+                                    <td><a href="#" class="badge badge-danger">Xóa</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- /.page-content -->
