@@ -124,6 +124,7 @@
     <Compile Include="Controllers\HocSinhController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LopHocPhanController.cs" />
+    <Compile Include="Controllers\ThongKeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -308,6 +309,13 @@
     <Content Include="Views\LopHocPhan\Index.cshtml" />
     <Content Include="Views\HocSinh\Index.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\ThongKe\SinhVien.cshtml" />
+    <Content Include="Views\ThongKe\GiaoVien.cshtml" />
+    <Content Include="Views\ThongKe\LopHocPhan.cshtml" />
+    <Content Include="Views\ThongKe\HocPhan.cshtml" />
+    <Content Include="Views\ThongKe\HocBong.cshtml" />
+    <Content Include="Views\ThongKe\CanhCao.cshtml" />
+    <Content Include="Views\ThongKe\TotNghiep.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

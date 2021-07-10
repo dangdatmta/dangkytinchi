@@ -1,0 +1,63 @@
+﻿
+@{
+    ViewBag.Title = "SinhVien";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<div class="page-content">
+    <div class="">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="card">
+                    <h3 class="header smaller lighter blue">THỐNG KÊ SINH VIÊN</h3>
+
+                    <div class="row">
+                        <span class="input-group-text" id="basic-addon1">Search</span>
+                        <input type="text" class="form-control" placeholder="Tìm kiếm" aria-label="Username" aria-describedby="basic-addon1">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected disabled hidden>Filter</option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                        </select>
+                    </div>
+
+                    <div class="card-body">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>STT</th>
+                                    <th>Mã sinh viên</th>
+                                    <th>Họ và tên</th>
+                                    <th>Ngày sinh</th>
+                                    <th>Lớp</th>
+                                    <th>Chuyên ngành</th>
+                                    <th>Bộ môn</th>
+                                    <th>Ghi chú</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @{
+                                    int i = 1;
+                                }
+                                <tr>
+                                    <td>@i</td>
+                                    <td>17150008</td>
+                                    <td>Đặng Quang Đạt</td>
+                                    <td>28/03/1999</td>
+                                    <td>CNPM16</td>
+                                    <td>CNPM</td>
+                                    <td>CNPM</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- /.page-content -->
+ 

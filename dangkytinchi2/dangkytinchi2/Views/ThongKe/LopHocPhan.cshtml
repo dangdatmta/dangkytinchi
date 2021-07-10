@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewBag.Title = "LopHocPhan";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="page-content">
+    <div class="">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="card">
+                    <h3 class="header smaller lighter blue">LỚP HỌC PHẦN</h3>
+
+                    <div class="row">
+                        <span class="input-group-text" id="basic-addon1">Search</span>
+                        <input type="text" class="form-control" placeholder="Tìm kiếm" aria-label="Username" aria-describedby="basic-addon1">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected disabled hidden>Filter</option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                        </select>
+                    </div>
+
+                    <div class="card-body">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>STT</th>
+                                    <th>Tên</th>
+                                    <th>Tên học phần</th>
+                                    <th>Số lượng sinh viên tối đa</th>
+                                    <th>Số lượng sinh viên đã đăng ký</th>
+                                    <th>Giáo viên</th>
+                                    <th>TKB</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @{
+                                    int i = 1;
+                                }
+                                <tr>
+                                    <td>@i</td>
+                                    <td>Thực tập CNTT 01</td>
+                                    <td>Thực tập CNTT</td>
+                                    <td>50</td>
+                                    <td>48</td>
+                                    <td>Nguyễn Văn A</td>
+                                    <td>T2 (7-9)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- /.page-content -->
