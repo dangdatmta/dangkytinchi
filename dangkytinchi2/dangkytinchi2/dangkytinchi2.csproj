@@ -120,10 +120,12 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CaiDatHeThongController.cs" />
     <Compile Include="Controllers\HocPhanController.cs" />
     <Compile Include="Controllers\HocSinhController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LopHocPhanController.cs" />
+    <Compile Include="Controllers\ThongKeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -308,6 +310,17 @@
     <Content Include="Views\LopHocPhan\Index.cshtml" />
     <Content Include="Views\HocSinh\Index.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\ThongKe\SinhVien.cshtml" />
+    <Content Include="Views\ThongKe\GiaoVien.cshtml" />
+    <Content Include="Views\ThongKe\LopHocPhan.cshtml" />
+    <Content Include="Views\ThongKe\HocPhan.cshtml" />
+    <Content Include="Views\ThongKe\HocBong.cshtml" />
+    <Content Include="Views\ThongKe\CanhCao.cshtml" />
+    <Content Include="Views\ThongKe\TotNghiep.cshtml" />
+    <Content Include="Views\CaiDatHeThong\ThiKetThuc.cshtml" />
+    <Content Include="Views\CaiDatHeThong\CanhCao.cshtml" />
+    <Content Include="Views\CaiDatHeThong\HocBong.cshtml" />
+    <Content Include="Views\CaiDatHeThong\TotNghiep.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

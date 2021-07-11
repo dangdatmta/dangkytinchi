@@ -1,0 +1,88 @@
+﻿
+@{
+    ViewBag.Title = "CanhCao";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Cảnh Cáo</h1>
+
+<div class="page-content">
+    <div class="">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="card">
+
+                    <div class="card-header">
+                        <a href="#" class="btn btn-success">Thêm</a>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Tổng số tín nợ</th>
+                                    <th>Số tín nợ của một kỳ</th>
+                                    <th>Số buổi nghỉ học</th>
+                                    <th>Điểm trung bình của 1 kỳ dưới < X</th>
+                                    <th>Edit</th>
+                                    <th>Delete</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>25</td>
+                                    <td>25</td>
+                                    <td>3</td>
+                                    <td>1.0</td>                                 
+                                    <td><a href="#" class="badge badge-warning">Sửa</a></td>
+                                    <td><a href="#" class="badge badge-danger">Xóa</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- /.page-content -->
+
+
+<h1>Chỉnh sửa</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            Tổng số tín nợ
+        </div>
+        <div class="col">
+            <input type="text" class="form-control">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-4">
+            Số tín nợ của một kỳ
+        </div>
+        <div class="col">
+            <input type="text" class="form-control">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            Số buổi nghỉ học
+        </div>
+        <div class="col">
+            <input type="text" class="form-control">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            Điểm trung bình của 1 kỳ nhỏ hơn
+        </div>
+        <div class="col">
+            <input type="text" class="form-control">
+        </div>
+    </div>
+
+</div>
+
+

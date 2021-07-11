@@ -1,15 +1,16 @@
 ﻿
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "ThiKetThuc";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
+
+<h1>Điều Kiện Thi Kết Thúc</h1>
 
 <div class="page-content">
     <div class="">
         <div class="row justify-content-center">
             <div class="col-md-10">
                 <div class="card">
-                    <h3 class="header smaller lighter blue">SINH VIÊN</h3>
                     <div class="card-header">
                         <a href="#" class="btn btn-success">Thêm</a>
                     </div>
@@ -18,11 +19,8 @@
                             <thead>
                                 <tr>
                                     <th>STT</th>
-                                    <th>Mã sinh viên</th>
-                                    <th>Họ và tên</th>
-                                    <th>Ngày sinh</th>
-                                    <th>Lớp</th>
-                                    <th>Ghi chú</th>
+                                    <th>Số buổi nghỉ</th>
+                                    <th>Điểm thường xuyên</th>
                                     <th>Edit</th>
                                     <th>Delete</th>
 
@@ -34,11 +32,8 @@
                                 }
                                 <tr>
                                     <td>@i</td>
-                                    <td>17150008</td>
-                                    <td>Đặng Quang Đạt</td>
-                                    <td>28/03/1999</td>
-                                    <td>CNPM16</td>
-                                    <td></td>
+                                    <td>3</td>
+                                    <td>5</td>
                                     <td><a href="#" class="badge badge-warning">Sửa</a></td>
                                     <td><a href="#" class="badge badge-danger">Xóa</a></td>
                                 </tr>
@@ -50,38 +45,27 @@
         </div>
     </div>
 </div><!-- /.page-content -->
-<div class="row">
-    <div class="col-sm-3">
-        Mã sinh viên
-    </div>
-    <div class="col">
-        <input type="text" class="form-control">
-    </div>
-</div>
-<div class="row">
-    <div class="col-sm-3">
-        Họ và tên
-    </div>
-    <div class="col">
-        <input type="text" class="form-control">
-    </div>
-</div>
 
-Ngày sinh: 
-<input type="date">
-<div class="row">
-    <div class="col-sm-3">
-        Lớp
+
+<h1>Chỉnh sửa</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-2">
+            Số buổi nghỉ
+        </div>
+        <div class="col">
+            <input type="text" class="form-control">
+        </div>
     </div>
 
-</div>
-<div class="row">
-    <div class="col-sm-3">
-        <select class="form-select" aria-label="Default select example">
-            <option selected>Lớp</option>
-            <option value="1">CNTT</option>
-            <option value="2">CNPM</option>
-        </select>
+    <div class="row">
+        <div class="col-sm-2">
+            Điểm thường xuyên
+        </div>
+        <div class="col">
+            <input type="text" class="form-control">
+        </div>
     </div>
+
 </div>
 

@@ -1,18 +1,28 @@
 ﻿
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "SinhVien";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
+
 
 <div class="page-content">
     <div class="">
         <div class="row justify-content-center">
             <div class="col-md-10">
                 <div class="card">
-                    <h3 class="header smaller lighter blue">SINH VIÊN</h3>
-                    <div class="card-header">
-                        <a href="#" class="btn btn-success">Thêm</a>
+                    <h3 class="header smaller lighter blue">THỐNG KÊ SINH VIÊN</h3>
+
+                    <div class="row">
+                        <span class="input-group-text" id="basic-addon1">Search</span>
+                        <input type="text" class="form-control" placeholder="Tìm kiếm" aria-label="Username" aria-describedby="basic-addon1">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected disabled hidden>Filter</option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                        </select>
                     </div>
+
                     <div class="card-body">
                         <table class="table table-bordered">
                             <thead>
@@ -22,9 +32,9 @@
                                     <th>Họ và tên</th>
                                     <th>Ngày sinh</th>
                                     <th>Lớp</th>
+                                    <th>Chuyên ngành</th>
+                                    <th>Bộ môn</th>
                                     <th>Ghi chú</th>
-                                    <th>Edit</th>
-                                    <th>Delete</th>
 
                                 </tr>
                             </thead>
@@ -38,9 +48,9 @@
                                     <td>Đặng Quang Đạt</td>
                                     <td>28/03/1999</td>
                                     <td>CNPM16</td>
+                                    <td>CNPM</td>
+                                    <td>CNPM</td>
                                     <td></td>
-                                    <td><a href="#" class="badge badge-warning">Sửa</a></td>
-                                    <td><a href="#" class="badge badge-danger">Xóa</a></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -50,38 +60,4 @@
         </div>
     </div>
 </div><!-- /.page-content -->
-<div class="row">
-    <div class="col-sm-3">
-        Mã sinh viên
-    </div>
-    <div class="col">
-        <input type="text" class="form-control">
-    </div>
-</div>
-<div class="row">
-    <div class="col-sm-3">
-        Họ và tên
-    </div>
-    <div class="col">
-        <input type="text" class="form-control">
-    </div>
-</div>
-
-Ngày sinh: 
-<input type="date">
-<div class="row">
-    <div class="col-sm-3">
-        Lớp
-    </div>
-
-</div>
-<div class="row">
-    <div class="col-sm-3">
-        <select class="form-select" aria-label="Default select example">
-            <option selected>Lớp</option>
-            <option value="1">CNTT</option>
-            <option value="2">CNPM</option>
-        </select>
-    </div>
-</div>
-
+ 
