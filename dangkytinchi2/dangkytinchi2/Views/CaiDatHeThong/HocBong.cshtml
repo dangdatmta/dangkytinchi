@@ -4,5 +4,122 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h2>HocBong</h2>
+<h2>HỌC BỔNG</h2>
 
+<div class="page-content">
+    <div class="">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="card">
+                    <div class="card-header">
+                        <a href="#" class="btn btn-success">Thêm</a>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>STT</th>
+                                    <th>Tên</th>
+                                    <th>Số tín chỉ nợ tối đa </th>
+                                    <th>Điểm trên X</th>
+                                    <th>%số tín chỉ tối thiểu / kỳ</th>
+                                    <th>Edit</th>
+                                    <th>Delete</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @{
+                                    int i = 1;
+                                }
+                                <tr>
+                                    <td>@i</td>
+                                    <td>Giỏi</td>
+                                    <td>3</td>
+                                    <td>X=3.2</td>
+                                    <td>90/100</td>
+                                    <td><a href="#" class="badge badge-warning">Sửa</a></td>
+                                    <td><a href="#" class="badge badge-danger">Xóa</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- /.page-content -->
+
+
+<h1>Chỉnh sửa</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-1">
+            Tên
+        </div>
+        <div class="col">
+            <input type="text" class="form-control">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-1">
+            Số tín chỉ nợ tối đa
+        </div>
+        <div class="col">
+            <input type="text" class="form-control">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-3">
+            Yêu cầu về trình độ ngoại ngữ
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3">
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Tiếng Anh</option>
+                <option value="1">A1</option>
+                <option value="2">B2</option>
+                <option value="3">B1</option>
+                <option value="4">TOIEC</option>
+                <option value="5">IELST</option>
+            </select>
+        </div>
+        <div class="col-sm-1">
+            <span id="basic-addon1"> Lớn Hơn </span>
+            <input type="text" placeholder="> X" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3">
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Tiếng Nga/ or khác</option>
+                <option value="1">A1</option>
+                <option value="2">B2</option>
+                <option value="3">B1</option>
+                <option value="4">TOIEC</option>
+                <option value="5">IELST</option>
+                <option>Không</option>
+            </select>
+        </div>
+        <div class="col-sm-1">
+            <span id="basic-addon1"> Lớn Hơn </span>
+            <input type="text" placeholder="> X" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-3">
+            Yêu cầu về chứng chỉ
+        </div>
+        <div class="col-sm-3">
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Tin học</option>
+                <option>Không</option>
+            </select>
+        </div>
+    </div>
+
+</div>

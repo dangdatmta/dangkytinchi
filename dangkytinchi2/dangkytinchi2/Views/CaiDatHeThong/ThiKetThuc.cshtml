@@ -4,5 +4,68 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h2>ThiKetThuc</h2>
+<h1>Điều Kiện Thi Kết Thúc</h1>
+
+<div class="page-content">
+    <div class="">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="card">
+                    <div class="card-header">
+                        <a href="#" class="btn btn-success">Thêm</a>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>STT</th>
+                                    <th>Số buổi nghỉ</th>
+                                    <th>Điểm thường xuyên</th>
+                                    <th>Edit</th>
+                                    <th>Delete</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @{
+                                    int i = 1;
+                                }
+                                <tr>
+                                    <td>@i</td>
+                                    <td>3</td>
+                                    <td>5</td>
+                                    <td><a href="#" class="badge badge-warning">Sửa</a></td>
+                                    <td><a href="#" class="badge badge-danger">Xóa</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- /.page-content -->
+
+
+<h1>Chỉnh sửa</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-2">
+            Số buổi nghỉ
+        </div>
+        <div class="col">
+            <input type="text" class="form-control">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-2">
+            Điểm thường xuyên
+        </div>
+        <div class="col">
+            <input type="text" class="form-control">
+        </div>
+    </div>
+
+</div>
 
