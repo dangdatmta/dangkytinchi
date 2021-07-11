@@ -1,0 +1,85 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="page-content">
+    <div class="">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="card">
+                    <h3 class="header smaller lighter blue">LỚP CHUYÊN NGÀNH</h3>
+                    <div class="card-header">
+                        <a href="#" class="btn btn-success">Thêm</a>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>STT</th>
+                                    <th>Mã Lớp</th>
+                                    <th>Tên Lớp</th>
+                                    <th>Tên Khoa</th>
+                                    <th>Giáo Viên Chủ Nhiệm</th>
+                                    <th>Edit</th>
+                                    <th>Delete</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @{
+                                    int i = 1;
+                                }
+                                <tr>
+                                    <td>@i</td>
+                                    <th>1221</th>
+                                    <td>Thực tập CNTT</td>
+                                    <td>CNTT</td>
+                                    <td>Phan Nguyên Hải</td>
+                                    <td><a href="#" class="badge badge-warning">Sửa</a></td>
+                                    <td><a href="#" class="badge badge-danger">Xóa</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- /.page-content -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3">
+            Mã lớp
+        </div>
+        <div class="col">
+            <input type="text" class="form-control">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3">
+            Tên lớp
+        </div>
+        <div class="col">
+            <input type="text" class="form-control">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3">
+            Tên khoa
+        </div>
+        <div class="col">
+            <input type="text" class="form-control">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3">
+            Giáo viên chủ nhiệm
+        </div>
+        <div class="col">
+            <input type="text" class="form-control">
+        </div>
+    </div>
+
+</div>

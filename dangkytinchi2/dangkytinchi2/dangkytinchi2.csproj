@@ -121,9 +121,11 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\CaiDatHeThongController.cs" />
+    <Compile Include="Controllers\GiaoVienController.cs" />
     <Compile Include="Controllers\HocPhanController.cs" />
     <Compile Include="Controllers\HocSinhController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LopChuyenNganhController.cs" />
     <Compile Include="Controllers\LopHocPhanController.cs" />
     <Compile Include="Controllers\ThongKeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -321,6 +323,8 @@
     <Content Include="Views\CaiDatHeThong\CanhCao.cshtml" />
     <Content Include="Views\CaiDatHeThong\HocBong.cshtml" />
     <Content Include="Views\CaiDatHeThong\TotNghiep.cshtml" />
+    <Content Include="Views\GiaoVien\Index.cshtml" />
+    <Content Include="Views\LopChuyenNganh\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

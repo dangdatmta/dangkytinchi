@@ -1,0 +1,96 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="page-content">
+    <div class="">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="card">
+                    <h3 class="header smaller lighter blue">GIÁO VIÊN</h3>
+                    <div class="card-header">
+                        <a href="#" class="btn btn-success">Thêm</a>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>STT</th>
+                                    <th>Mã giáo viên</th>
+                                    <th>Họ và tên</th>
+                                    <th>Ngày sinh</th>
+                                    <th>Khoa</th>
+                                    <th>Bộ Môn</th>
+                                    <th>Edit</th>
+                                    <th>Delete</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @{
+                                    int i = 1;
+                                }
+                                <tr>
+                                    <td>@i</td>
+                                    <td>17150071</td>
+                                    <td>Nguyễn Tuấn Toàn</td>
+                                    <td>29/05/1998</td>
+                                    <td>CNPM</td>
+                                    <td>Thực tập CNTT</td>
+                                    <td></td>
+                                    <td><a href="#" class="badge badge-warning">Sửa</a></td>
+                                    <td><a href="#" class="badge badge-danger">Xóa</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- /.page-content -->
+<div class="row">
+    <div class="col-sm-3">
+        Mã giáo viên
+    </div>
+    <div class="col">
+        <input type="text" class="form-control">
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-3">
+        Họ và tên
+    </div>
+    <div class="col">
+        <input type="text" class="form-control">
+    </div>
+</div>
+
+Ngày sinh: 
+<input type="date">
+<div class="row">
+    <div class="col-sm-3">
+        Khoa
+    </div>
+
+</div>
+<div class="row">
+    <div class="col-sm-3">
+        <select class="form-select" aria-label="Default select example">
+            <option selected>Lớp</option>
+            <option value="1">CNTT</option>
+            <option value="2">CNPM</option>
+        </select>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-3">
+        Bộ môn
+    </div>
+    <div class="col">
+        <input type="text" class="form-control">
+    </div>
+</div>
