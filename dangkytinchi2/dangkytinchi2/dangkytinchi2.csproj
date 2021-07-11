@@ -123,7 +123,7 @@
     <Compile Include="Controllers\CaiDatHeThongController.cs" />
     <Compile Include="Controllers\GiaoVienController.cs" />
     <Compile Include="Controllers\HocPhanController.cs" />
-    <Compile Include="Controllers\HocSinhController.cs" />
+    <Compile Include="Controllers\SinhVienController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LopChuyenNganhController.cs" />
     <Compile Include="Controllers\LopHocPhanController.cs" />
@@ -310,7 +310,7 @@
     <Content Include="Views\Shared\_AdminLayout.cshtml" />
     <Content Include="Views\HocPhan\Index.cshtml" />
     <Content Include="Views\LopHocPhan\Index.cshtml" />
-    <Content Include="Views\HocSinh\Index.cshtml" />
+    <Content Include="Views\SinhVien\Index.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
     <Content Include="Views\ThongKe\SinhVien.cshtml" />
     <Content Include="Views\ThongKe\GiaoVien.cshtml" />

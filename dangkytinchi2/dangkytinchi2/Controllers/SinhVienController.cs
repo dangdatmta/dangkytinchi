@@ -6,27 +6,27 @@ using System.Web.Mvc;
 
 namespace dangkytinchi2.Controllers
 {
-    public class HocSinhController : Controller
+    public class SinhVienController : Controller
     {
-        // GET: HocSinh
+        // GET: SinhVien
         public ActionResult Index()
         {
             return View();
         }
 
-        // GET: HocSinh/Details/5
+        // GET: SinhVien/Details/5
         public ActionResult Details(int id)
         {
             return View();
         }
 
-        // GET: HocSinh/Create
+        // GET: SinhVien/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: HocSinh/Create
+        // POST: SinhVien/Create
         [HttpPost]
         public ActionResult Create(FormCollection collection)
         {
@@ -42,13 +42,13 @@ namespace dangkytinchi2.Controllers
             }
         }
 
-        // GET: HocSinh/Edit/5
+        // GET: SinhVien/Edit/5
         public ActionResult Edit(int id)
         {
             return View();
         }
 
-        // POST: HocSinh/Edit/5
+        // POST: SinhVien/Edit/5
         [HttpPost]
         public ActionResult Edit(int id, FormCollection collection)
         {
@@ -64,13 +64,13 @@ namespace dangkytinchi2.Controllers
             }
         }
 
-        // GET: HocSinh/Delete/5
+        // GET: SinhVien/Delete/5
         public ActionResult Delete(int id)
         {
             return View();
         }
 
-        // POST: HocSinh/Delete/5
+        // POST: SinhVien/Delete/5
         [HttpPost]
         public ActionResult Delete(int id, FormCollection collection)
         {
